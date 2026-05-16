@@ -14,24 +14,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Dawn of Legends - Mobile Legends: Bang Bang Blog & Database",
+  description: "Your ultimate MLBB companion featuring hero database, tier lists, meta tracker, guides, tools, esports coverage, skins gallery, and more. Everything a Mobile Legends player needs.",
+  keywords: ["MLBB", "Mobile Legends", "Bang Bang", "hero database", "tier list", "meta", "guides", "esports", "skins", "quiz", "Dawn of Legends"],
+  authors: [{ name: "Dawn of Legends Team" }],
   icons: {
     icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Dawn of Legends - MLBB Blog & Database",
+    description: "The ultimate Mobile Legends: Bang Bang companion with hero database, tier lists, guides, and tools.",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
   },
 };
 
@@ -43,7 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ background: '#0a0a1a', color: '#e0e0e0' }}
       >
         {children}
         <Toaster />
